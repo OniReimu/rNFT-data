@@ -34,7 +34,11 @@ TAU = 0.005  # Soft update coefficient
 # pylint: disable=E1101
 
 
-
+"""
+Notice: 
+    - This code demonstrates that the agent model architecture is modular and plug-and-play, allowing it to be replaced with alternative implementations.
+    - The implementation below is barely a simple example of a PPO agent without any optimization. We would like to share the optimized version after the paper is accepted.
+"""
 class PPOPolicy(nn.Module):
     """Policy network for PPO
 
